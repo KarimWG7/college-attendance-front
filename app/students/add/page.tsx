@@ -18,7 +18,7 @@ export default function AddStudentPage() {
     firstName: "",
     lastName: "",
     gmail: "",
-    departmentID: 2,
+    departmentID: 1,
     nfc_Tag: "",
     level: "",
   });
@@ -43,7 +43,7 @@ export default function AddStudentPage() {
         firstName: formData.firstName,
         lastName: formData.lastName,
         gmail: formData.gmail,
-        departmentID: 2,
+        departmentID: 1,
         nfc_Tag: formData.nfc_Tag,
         level: parseInt(formData.level),
       });
