@@ -18,7 +18,7 @@ export default function AddStudentPage() {
     firstName: "",
     lastName: "",
     gmail: "",
-    departmentID: "",
+    departmentID: 2,
     nfc_Tag: "",
     level: "",
   });
@@ -30,7 +30,6 @@ export default function AddStudentPage() {
       !formData.firstName ||
       !formData.lastName ||
       !formData.gmail ||
-      !formData.departmentID ||
       !formData.nfc_Tag ||
       !formData.level
     ) {
@@ -44,7 +43,7 @@ export default function AddStudentPage() {
         firstName: formData.firstName,
         lastName: formData.lastName,
         gmail: formData.gmail,
-        departmentID: parseInt(formData.departmentID),
+        departmentID: 2,
         nfc_Tag: formData.nfc_Tag,
         level: parseInt(formData.level),
       });
@@ -126,7 +125,7 @@ export default function AddStudentPage() {
                 />
               </div>
 
-              <div className="space-y-2">
+              {/* <div className="space-y-2">
                 <Label htmlFor="departmentID">Department ID</Label>
                 <Input
                   id="departmentID"
@@ -137,7 +136,7 @@ export default function AddStudentPage() {
                   }
                   required
                 />
-              </div>
+              </div> */}
 
               <div className="space-y-2">
                 <Label htmlFor="level">Level</Label>
