@@ -24,7 +24,7 @@ export default function EditStudentPage({
     firstName: "",
     lastName: "",
     gmail: "",
-    departmentID: "",
+    departmentID: "1",
     nfc_Tag: "",
     level: "",
   });
@@ -41,7 +41,7 @@ export default function EditStudentPage({
         firstName: data.firstName,
         lastName: data.lastName,
         gmail: data.gmail,
-        departmentID: data.departmentID.toString(),
+        departmentID: "1",
         nfc_Tag: data.nfc_Tag,
         level: data.level.toString(),
       });
@@ -156,7 +156,7 @@ export default function EditStudentPage({
                 />
               </div>
 
-              <div className="space-y-2">
+              {/* <div className="space-y-2">
                 <Label htmlFor="departmentID">Department ID</Label>
                 <Input
                   id="departmentID"
@@ -167,7 +167,7 @@ export default function EditStudentPage({
                   }
                   required
                 />
-              </div>
+              </div> */}
 
               <div className="space-y-2">
                 <Label htmlFor="level">Level</Label>
